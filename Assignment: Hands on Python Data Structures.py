@@ -28,3 +28,13 @@ for key,value in my_information.items():
     value_result += value_text
 value_result = value_result[:-2]
 print("Values:", value_result)
+
+# Task 3
+favorite_things =('Harry Potter', 'Beetle juice','Wicked')
+
+try:
+    favorite_things.append('Captain America')
+    print("Successfully added favorite things!")
+except:
+    print ("Oops! Tuples cannot be changed.")
+    print ("Length of tuple: ", len(favorite_things))
