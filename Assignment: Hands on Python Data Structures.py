@@ -31,6 +31,7 @@ print("Values:", value_result)
 
 # Task 3
 favorite_things =('Harry Potter', 'Beetle juice','Wicked')
+print("\nFavorite things: ", favorite_things)
 
 try:
     favorite_things.append('Captain America')
