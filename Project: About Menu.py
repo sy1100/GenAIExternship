@@ -1,11 +1,13 @@
 import turtle
 
+# Function for factorial
 def factorial(num):
     if num == 1:
         return 1
     else:
         return num * factorial(num - 1)
 
+# Function for fibonacci
 def fibonacci(num):
     if num == 0:
         return 0
@@ -14,6 +16,7 @@ def fibonacci(num):
     else:
         return fibonacci(num - 1) + fibonacci(num - 2)
 
+# Fractal tree setting
 def tree_setup():
     global t
     t = turtle.Turtle()
@@ -25,6 +28,7 @@ def tree_setup():
     t.backward(100)
     t.down()
 
+# Function for fractal tree
 def fractal(length, depth=0):
     if depth <4:
         depth += 1
@@ -43,6 +47,7 @@ def fractal(length, depth=0):
         t.left(60)
         t.backward(length)
 
+# Function for menu selection
 def main():
     print("Welcome to the Recursive Artistry Program"
           "\nChoose an option:"
@@ -73,5 +78,6 @@ def main():
     elif user_input == 4:
         exit()
 
+# call main function
 main()
 
